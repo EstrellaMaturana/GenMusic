@@ -1,0 +1,247 @@
+* {
+    color: #314D71;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+}
+
+body {
+    background-color: #DFF2F0;
+}
+
+p {
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cabecera, .dudasTitulo, .index {
+    border-radius: 20px;
+    width: 90%;
+    min-height: auto;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    background-image: url('../img/fondoADNmelodico.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cabecera:before, .textoTitulo:before, .charlaTitulo:before, .articuloTitulo:before, .dudasTitulo:before, .index:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 17px;
+    z-index: 0;
+}
+
+h2, h3, a {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 20px;
+}
+
+.titulo {
+    align-content: center;
+}
+
+.cuerpo {
+    display: grid;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 5fr 2fr 380px;
+    grid-template-rows: auto auto;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 2%;
+}
+
+.texto {
+    display: grid;
+    grid-template-rows: 100px 800px; 
+    gap: 1%;
+    margin-bottom: 5%;
+}
+
+.textoTitulo, .articuloTitulo {
+    border-radius: 20px;
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+    background-image: url('../img/fondoADNmelodico.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.textoTexto {
+    height: 1300px;
+}
+
+.textoTexto, .articuloEnlaces, .dudasTexto {
+    border: 3px solid #C3EBF2;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.leyenda, .charla {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: 100px auto;
+    gap: 2%;
+}
+
+.tituloLeyenda, .charlaTitulo {
+    border-radius: 20px;
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+    background-image: url('../img/fondoADNmelodico.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.enlace1, .enlace2, .enlace3, .enlace4, .enlace5 {
+    border-radius: 20px;
+    justify-items: center;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #C3EBF2;
+    margin-bottom: 5%;
+}
+
+.enlaces {
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    gap: 2%;
+}
+
+.enlace1 p,
+.enlace2 p,
+.enlace3 p,
+.enlace4 p,
+.enlace5 p {
+    text-align: center;
+}
+
+.enlaces a, .index a, .dudas a {
+    padding: 8px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.articulos {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    width: 100%;
+    gap: 4%;
+}
+
+.dudas{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 3%;
+    width: 100%;
+}
+
+.dudasTexto {
+    width: 90%;
+    height: 120%;
+    text-align: center;
+    justify-items: center;
+    margin-left: 5%;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50%;
+}
+
+.leyenda a:hover, .index a:hover, .dudas a:hover {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 20px;
+    justify-items: center;
+    background-color: #99CEDF;
+}
+
+.enlaces p {
+    font-style: italic;
+}
+
+.enlace1 img,
+.enlace2 img, .enlace4 img, .enlace5 img {
+    width: 30px;
+}
+
+.enlace3 img {
+    width: 20px;
+}
+
+.textoTexto img {
+    width: 275px;
+}
+
+.footer {
+    display: grid;
+    height: auto;
+    grid-template-columns: auto 400px;
+    margin-left: 2%;
+    margin-right: 5%;
+    gap: 2%;
+    justify-items: center;
+    margin-bottom: 4%;
+    margin-top: 5%;
+}
+
+.dudas{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 3%;
+}
+
+.dudasTexto {
+    width: 90%;
+    height: 120%;
+    text-align: center;
+    justify-items: center;
+    margin-left: 5%;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.articulos img {
+    width: 400px;
+}

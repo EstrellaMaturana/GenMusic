@@ -1,0 +1,160 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.cabecera {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url('../img/fondoADNmelodico.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    border-radius: 20px;
+}
+
+.cabecera audio {
+    margin-top: 70px;
+    opacity: 0.3;
+}
+
+.cabecera:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.082);
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.cabecera h1, .cabecera a {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.cuerpo {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 30px;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.musica, .epigenetica, .formulario{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    border: 5px solid #E9F5FB;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.introduccion {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: #E9F5FB;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.musicayepigenetica, .melodicoyformulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario, .melodico, .genetica {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    border: 5px solid #E9F5FB;
+    border-radius: 20px;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.introduccion img {
+    width: 500px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.introduccion p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.genetica img, .melodico img {
+    width: 200px;
+    margin-left: 30px;
+}
+
+.epigenetica img {
+    width: 200px;
+    margin-right: 30px;
+}
+
+.musica img {
+    width: 300px;
+    margin-right: 30px;
+}
+
+.formulario img {
+    width: 150px;
+    margin-left: 30px;
+}
+
+p {
+    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    font-size: 30px;
+    background-color: #C2E2F4;
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 20px;
+    justify-items: center;
+    padding: 8px 30px;
+    background-color: #174E6E;
+    height: 280px;
+    color: white;
+}

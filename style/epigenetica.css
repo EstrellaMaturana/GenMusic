@@ -1,0 +1,369 @@
+* {
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F2FBE9;
+}
+
+p {
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cabecera, .informacionExtraTitulo, .dudasTitulo, .index {
+    border-radius: 20px;
+    width: 90%;
+    min-height: auto;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    background-image: url('../img/fondoEpigenetica.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cabecera::before, .informacionExtraTitulo:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 17px;
+    z-index: 0;
+}
+
+h3, h2, a {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 20px;
+}
+
+.titulo {
+    align-content: center;
+}
+
+.cuerpo {
+    display: grid;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 4fr 380px;
+    grid-template-rows: auto auto auto auto;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 2%;
+}
+
+.texto {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1%;
+    margin-bottom: 5%;
+}
+
+.oido,
+.percepcion,
+.ritmo,
+.conclusion {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 5px;
+}
+
+.oidoTitulo,
+.percepcionTitulo,
+.ritmoTitulo,
+.conclusionTitulo {
+    border-radius: 20px;
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+    background-image: url('../img/fondoEpigenetica.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.oidoTitulo:before,
+.percepcionTitulo:before,
+.ritmoTitulo:before,
+.conclusionTitulo:before,
+.tituloLeyenda:before,
+.juegoTitulo:before, .dudasTitulo:before, .index:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 17px;
+    z-index: 0;
+}
+
+.introduccion,
+.oidoTexto,
+.percepcionTexto,
+.ritmoTexto,
+.conclusionTexto, .dudasTexto {
+    border: 3px solid #DDF5C6;
+    border-radius: 20px;
+}
+
+.derecha {
+    display: grid;
+    grid-template-rows: 250px 500px;
+}
+
+.leyenda,
+.juego {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 2%;
+}
+
+.tituloLeyenda,
+.juegoTitulo {
+    border-radius: 20px;
+    width: 100%;
+    height: 75px;
+    justify-items: center;
+    text-align: center;
+    background-image: url('../img/fondoEpigenetica.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.enlace1,
+.enlace2,
+.enlace3,
+.enlace4,
+.enlace5, .juegoEnlace {
+    border-radius: 20px;
+    justify-items: center;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #deecd1;
+    margin-bottom: 5%;
+}
+
+.enlace1 p,
+.enlace2 p,
+.enlace3 p,
+.enlace4 p,
+.enlace5 p, .juegoEnlace p {
+    text-align: center;
+}
+
+.enlaces {
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    gap: 2%;
+}
+
+.enlaces a, .juegoEnlace a {
+    padding: 8px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.informacionExtra {
+    display:grid;
+    grid-template-rows: auto 1fr;
+}
+
+.informacionExtraEnlaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 2%;
+    gap: 2%;
+}
+
+.informacionExtraEnlacesLibro, .informacionExtraEnlacesArticulos, .informacionExtraEnlacesVideos {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    height: auto;
+}
+
+.tituloLibro, .tituloVideos, .informacionExtraEnlacesArticulosTitulo {
+    border-radius: 20px;
+    justify-items: center;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #deecd1;
+    margin-bottom: 5%;
+}
+
+li {
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.libro {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.libroTitulo p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.libroCuerpo {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.libro img {
+    width: 150%;
+    margin-top: 30%;
+}
+
+.libroSinopsis {
+    margin-left: 13%;
+}
+
+.derecha a:hover, .footer a:hover {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 20px;
+    justify-items: center;
+    background-color: #62A170;
+    color: white;
+}
+
+.footer {
+    display: grid;
+    height: auto;
+    grid-template-columns: auto 400px;
+    margin-left: 2%;
+    margin-right: 5%;
+    gap: 2%;
+    justify-items: center;
+    margin-bottom: 4%;
+}
+
+.dudas{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 3%;
+}
+
+.dudasTexto {
+    width: 90%;
+    height: 120%;
+    text-align: center;
+    justify-items: center;
+    margin-left: 5%;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.introduccion {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.introduccionFoto img {
+    width: 200px;
+}
+
+video {
+    width: 300px;
+    margin-left: 10%;
+}
+
+.oidoTexto {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.oidoTextoFoto img {
+    width: 200px;
+}
+
+.conclusionTexto {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+.conclusionTextoFoto img {
+    width: 150px;
+}
+
+.percepcionTexto {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.percepcionTextoFoto img {
+    width: 150px;
+}
+
+.articulos video {
+    width: 250px;
+    margin-left: 25%;
+}
+
+.derecha p {
+    font-style: italic;
+}
+
+.enlace1 img,
+.enlace2 img, .enlace4 img, .enlace5 img {
+    width: 30px;
+}
+
+.enlace3 img {
+    width: 20px;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu perfil musical-genético</title>
+    <link rel="stylesheet" href="style/perfil.css">
+    <link rel="shortcut icon" href="img/iconoPerfil.ico">
+    <meta author="Estrella Maturana Muñoz">
+</head>
+
+<body>
+    <div class="cabecera">
+        <div class="titulo">
+            <h2>TU PERFIL MUSICAL-GENÉTICO</h2>
+        </div>
+    </div>
+    <div class="elemento">
+        <div class="cuerpo">
+            <form action="" method="get">
+                <div class="formulario1">
+                    <div class="tituloFormulario1">
+                        <h3>Datos personales</h3>
+                    </div>
+                    <div class="tabla1">
+                        <table>
+                            <tr>
+                                <td><label for="nombre">Nombre</label></td>
+                                <td><input type="text" id="nombre" name="nombre" autofocus></td>
+                                <td><label for="apellidos">Apellidos</label></td>
+                                <td colspan="4"><input type="text" id="apellidos" name="apellidos" size="70"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fechaNacimiento">Fecha de nacimiento</label></td>
+                                <td><input type="date" id="fechaNacimiento" name="fechaNacimiento"></td>
+                                <td><label for="telefono">Teléfono</label></td>
+                                <td><input type="text" id="telefono" name="telefono" size="24"></td>
+                                <td><label for="contraseña">Contraseña</label></td>
+                                <td><input type="password" id="contraseña" name="contraseña"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="correo">Correo electrónico</label></td>
+                                <td colspan="5"><input type="text" id="correo" name="correo" size="110"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="formularios23">
+                    <div class="formulario2">
+                        <div class="tituloFormulario2">
+                            <h3>Antecedentes genéticos</h3>
+                        </div>
+                        <div class="tabla2">
+                            <table>
+                                <tr>
+                                    <td colspan="2"><label for="familiares">¿Tienes familiares músicos?</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="familiaresMusicosS" name="familiaresMusicos" value="Si">
+                                        <label for="familiaresMusicosS">Sí</label></td>
+                                    <td><input type="radio" id="familaresMusicosN" name="familiaresMusicos" value="No">
+                                        <label for="familaresMusicosN">No</label></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><label for="familiaresQuienes">Si respondiste sí, ¿quiénes?</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><textarea name="familiaresQuienes" id="familiaresQuienes"
+                                            cols="40"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><label for="familiarEnseña">¿Algún familiar te enseñó a tocar o
+                                            cantar?</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="familiarEnseñaS" name="familiarEnseña" value="Si">
+                                        <label for="familiarEnseñaS">Sí</label></td>
+                                    <td><input type="radio" id="familiarEnseñaN" name="familiarEnseña" value="No">
+                                        <label for="familiarEnseñaN">No</label></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="formulario3">
+                        <div class="tituloFormulario3">
+                            <h3>Entorno y hábitos musicales</h3>
+                        </div>
+                        <div class="tabla3">
+                            <table>
+                                <tr>
+                                    <td colspan="3"><label for="frecuenciaMusica">¿Con qué frecuencia escuchas
+                                            música?</label></td>
+                                    <td colspan="3"><label for="generoFavorito">Género musical favorito</label></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" id="frecuenciaMusicaDiario" name="frecuenciaMusica"
+                                            value="diario">
+                                            <label for="frecuenciaMusicaDiario">Diario</label></td>
+                                    <td><input type="radio" id="frecuenciaMusicaSemanal" name="frecuenciaMusica"
+                                            value="semanal">
+                                            <label for="frecuenciaMusicaSemanal">Semanal</label></td>
+                                    <td><input type="radio" id="frecuenciaMusicaOcasional" name="frecuenciaMusica"
+                                            value="ocasional">
+                                            <label for="frecuenciaMusicaOcasional">Ocasional</label></td>
+                                    <td colspan="3"><select name="generoFavorito" id="generoFavorito">
+                                            <option value="ninguno" selected>Ninguno</option>
+                                            <option value="clasica">Clásica</option>
+                                            <option value="rock">Rock</option>
+                                            <option value="pop">Pop</option>
+                                            <option value="jazz">Jazz</option>
+                                            <option value="electronica">Electrónica</option>
+                                            <option value="trap">Trap</option>
+                                            <option value="reggaeton">Reggaeton</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><label for="ambiente">¿En qué ambiente creciste?</label></td>
+                                    <td colspan="3"><label for="colegio">¿Tu colegio fomentaba actividades
+                                            musicales?</label></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><textarea name="ambiente" id="ambiente"
+                                            cols="50">Familiar, artístico, deportivo...</textarea></td>
+                                    <td><input type="radio" id="colegioSi" name="colegio" value="si">
+                                        <label for="colegioSi">Sí</label></td>
+                                    <td><input type="radio" id="colegioNo" name="colegio" value="no">
+                                        <label for="colegioNo">No</label></td>
+                                    <td><input type="radio" id="colegioPocasVeces" name="colegio" value="poco">
+                                        <label for="colegioPocasVeces">Pocas veces</label></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="formulario4">
+                    <div class="tituloFormulario4">
+                        <h3>Tu experiencia musical</h3>
+                    </div>
+                    <div class="tabla4">
+                        <table>
+                            <tr>
+                                <td colspan="2"><label for="tocarInstrumento">¿Tocas algún instrumento?</label></td>
+                                <td colspan="2"><label for="anyosPractica">Años de práctica musical</label></td>
+                                <td><label for="formacion">¿Recibiste formación formal?</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" id="tocarInstrumentoSi" name="tocarInstrumento" value="si">
+                                    <label for="tocarInstrumentoSi">Sí</label></td>
+                                <td><input type="radio" id="tocarInstrumentoNo" name="tocarInstrumento" value="no">
+                                    <label for="tocarInstrumentoNo">No</label></td>
+                                <td colspan="2"><select id="anyosPractica" name="anyosPractica">
+                                        <option value="nada" selected>Nada de práctica</option>
+                                        <option value="0-1">0 a 1 años</option>
+                                        <option value="1-2">1 a 2 años</option>
+                                        <option value="2-3">2 a 3 años</option>
+                                        <option value="3-4">3 a 4 años</option>
+                                        <option value="5+">Más de 5 años</option>
+                                    </select></td>
+                                <td><input type="radio" id="formacionSi" name="formacion" value="si">
+                                    <label for="formacionSi">Sí</label>
+                                    <input type="radio" id="formacionNo" name="formacion" value="no">
+                                    <label for="formacionNo">No</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"><label for="saberInstrumento">Si respondiste sí, ¿cuáles?</label></td>
+                                <td><label for="tipoFormacion">Si respondiste sí, ¿qué tipo de formación?</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="saberInstrumentoPiano" name="piano">
+                                    <label for="saberInstrumentoPiano">Piano</label></td>
+                                <td><input type="checkbox" id="saberInstrumentoGuitarra" name="guitarra">
+                                    <label for="saberInstrumentoGuitarra">Guitarra</label></td>
+                                <td><input type="checkbox" id="saberInstrumentoBateria" name="bateria">
+                                    <label for="saberInstrumentoBateria">Batería</label></td>
+                                <td><input type="checkbox" id="saberInstrumentoViolonchelo" name="violonchelo">
+                                    <label for="saberInstrumentoViolonchelo">Violonchelo</label></td>
+                                <td rowspan="2"><textarea name="tipoFormacion" id="tipoFormacion" rows="4"
+                                        cols="50"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="saberInstrumentoVoz" name="voz">
+                                    <label for="saberInstrumentoVoz">Voz</label></td>
+                                <td><input type="checkbox" id="saberInstrumentoFlauta" name="flauta">
+                                    <label for="saberInstrumentoFlauta">Flauta</label></td>
+                                <td><input type="checkbox" id="saberInstrumentoTrompeta" name="trompeta">
+                                    <label for="saberInstrumentoTrompeta">Trompeta</label></td>
+                                <td><input type="checkbox" id="saberInstrumentoOtro" name="otro">
+                                    <label for="saberInstrumentoOtro">Otro</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="formulario5">
+                    <div class="tituloFormulario5">
+                        <h3>Percepción sobre el talento musical</h3>
+                    </div>
+                    <div class="tabla5">
+                        <table>
+                            <tr>
+                                <td colspan="3"><label for="talentoMusical">¿Crees que el talento musical es innato o
+                                        aprendido?</label></td>
+                                <td><label for="opinion">Explica brevemente por qué piensas eso</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" id="talentoMusicalInnato" name="talentoMusical" value="innato">
+                                    <label for="talentoMusicalInnato">Innato</label>
+                                </td>
+                                <td><input type="radio" id="talentoMusicalAprendido" name="talentoMusical"
+                                        value="aprendido">
+                                        <label for="talentoMusicalAprendido">Aprendido</label></td>
+                                <td><input type="radio" id="talentoMusicalAmbos" name="talentoMusical" value="ambos">
+                                    <label for="talentoMusicalAmbos">Ambos</label>
+                                </td>
+                                <td><textarea name="opinion" id="opinion" cols="50"></textarea></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="botones">
+                    <button type="submit">Enviar datos</button>
+                    <button type="reset">Borrar datos</button>
+                </div>
+        </div>
+        </form>
+        <div class="leyenda">
+            <div class="tituloLeyenda">
+                <h3>¿Quieres volver a otras páginas?</h3>
+            </div>
+            <div class="enlaces">
+                <div class="enlace1">
+                    <img src="img/estrella.png" alt="Imagen no disponible"><a href="index.html" title="Index">Index</a>
+                    <p>Explora todos los temas y vuelve fácilmente a cualquier apartado</p>
+                </div>
+
+                <div class="enlace2">
+                    <img src="img/iconoGenetica.ico" alt="Imagen no disponible"><a href="genetica.html" title="Genética">Genética</a>
+                    <p>Para volver a revisar los fundamentos de la genética y como influyen en nosotros</p>
+                </div>
+
+                <div class="enlace3">
+                    <img src="img/iconoMusica.ico" alt="Imagen no disponible"><a href="musica.html" title="Música">¿Nacemos con talento
+                        musical?</a>
+                    <p>Descubre cómo la genética y la música se entrelazan en el estudio del sonido y la herencia</p>
+                </div>
+
+                <div class="enlace4">
+                    <img src="img/iconoEpigenetica.ico" alt="Imagen no disponible"><a
+                        href="epigenetica.html" title="Epigenética">Epigenética</a>
+                    <p>Para entender cómo el entorno puede modificar la expresión genética</p>
+                </div>
+
+                <div class="enlace5">
+                    <img src="img/iconoMelodico.ico" alt="Imagen no disponible"><a href="adnMelodico.html" title="ADN Mélodico">El ADN
+                        Melódico</a>
+                    <p>Para exploprar cómo el ADN puede inspirar y reflejar estructuras musicales</p>
+                </div>
+            </div>
+            <div class="resultado">
+                <div class="resultadoTitulo">
+                    <h2>¿Quieres saber tus resultados?</h2>
+                </div>
+                <div class="resultadoTexto">
+                    <p>Si quieres saber tus respuestas estaré encantada de contestarte.
+                        Puedes escribirme a mi correo y te responderé lo antes posible.</p>
+                    <a href="mailto:estrellamaturana@gmail.com?subject=Resultado%20perfil%20musical%20genetico">Mandar correo</a>
+                </div>
+            </div>
+            <div class="index">
+                    <h2>¿Quieres volver a la página principal?</h2>
+                    <a href="index.html#index" title="Index">Index</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

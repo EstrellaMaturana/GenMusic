@@ -1,0 +1,400 @@
+* {
+    color: #44255E;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F8F5FA;
+}
+
+p {
+    text-align: justify;
+}
+
+.cabecera, .dudasTitulo, .index {
+    border-radius: 20px;
+    width: 90%;
+    min-height: auto;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    background-image: url('../img/fondoMusica.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cabecera:before, .dudasTitulo:before, .index:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 17px;
+    z-index: 0;
+}
+
+h3, h2, a {
+    color: #361C4A;
+    position: relative;
+    z-index: 1;
+}
+
+.cabecera h2 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 20px;
+}
+
+.titulo {
+    align-content: center;
+}
+
+.cuerpo {
+    display: grid;
+    width: 90%;
+    height: auto;
+    grid-template-columns: 4fr 370px;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    justify-items: center;
+    gap: 2%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.texto {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 1%;
+    margin-bottom: 5%;
+}
+
+.influencia,
+.odio,
+.percepcion,
+.ritmo,
+.conclusion {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 4%;
+}
+
+.influenciaTitulo,
+.oidoTitulo,
+.percepcionTitulo,
+.ritmoTitulo,
+.conclusionTitulo {
+    border: 3px solid #EDDFFF;
+    border-radius: 20px;
+    justify-items: center;
+    text-align: center;
+    background-image: url('../img/fondoMusica.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.influenciaTitulo:before,
+.oidoTitulo:before,
+.percepcionTitulo:before,
+.ritmoTitulo:before,
+.conclusionTitulo:before,
+.instrumentosTitulo:before,
+.tituloLeyenda:before, .informacionExtraTitulo:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 17px;
+    z-index: 0;
+}
+
+.influenciaTitulo {
+    font-size: 20px;
+}
+
+.influenciaTexto,
+.oidoTexto,
+.percepcionTexto,
+.ritmoTexto,
+.conclusionTexto {
+    border: 3px solid #E6D6FF;
+    border-radius: 20px;
+}
+
+.oidoTexto {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 1%;
+}
+
+p, ul li{
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.conclusion {grid-column: 1 / -1;}
+
+.instrumentosTitulo {
+    font-size: 20px;
+    border-radius: 20px;
+    justify-items: center;
+    text-align: center;
+    background-image: url('../img/fondoMusica.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.instrumentos {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom: 10%;
+    gap: 2%;
+    grid-column: 1 / -1;
+}
+
+.instrumentosTexto, .dudasTexto {
+    border: 3px solid #E6D6FF;
+    border-radius: 20px;
+}
+
+.derecha {
+    display: grid;
+    grid-template-rows: 1000px 100px;
+}
+
+.leyenda {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1%;
+}
+
+.tituloLeyenda, .informacionExtraTitulo {
+    border-radius: 20px;
+    width: 100%;
+    justify-items: center;
+    height: 80px;
+    text-align: center;
+    background-image: url('../img/fondoMusica.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.enlace1,
+.enlace2,
+.enlace3,
+.enlace4,
+.enlace5 {
+    border-radius: 20px;
+    justify-items: center;
+    padding: 15px;
+    border-radius: 20px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #eddfff7c;
+}
+
+.enlaces p {
+    font-style: italic;
+    text-align: center;
+}
+
+.enlaces {
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    gap: 2%;
+}
+
+.enlaces a, .index a, .dudas a {
+    padding: 8px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.informacionExtra {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 4%;
+}
+
+.informacionExtraEnlaces {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.informacionExtraEnlacesVideos {
+    border-radius: 20px;
+    justify-items: center;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #eddfff7c;
+    height: 280px;
+}
+
+.informacionExtraEnlacesArticulos {
+    border-radius: 20px;
+    justify-items: center;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #eddfff7c;
+    height: 200px;
+}
+
+a:hover {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    justify-items: center;
+    background-color: #E1CCF4;
+}
+
+.footer {
+    display: grid;
+    height: auto;
+    grid-template-columns: auto 400px;
+    margin-left: 2%;
+    margin-right: 5%;
+    gap: 2%;
+    justify-items: center;
+    margin-bottom: 4%;
+}
+
+.dudas{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 3%;
+}
+
+.dudasTexto {
+    width: 90%;
+    height: 120%;
+    text-align: center;
+    justify-items: center;
+    margin-left: 5%;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.introduccion img {
+    width: 150px;
+    margin-top: 20%;
+}
+
+.introduccion {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+.influenciaTexto {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.influenciaTextoFoto img {
+    width: 150px;
+}
+
+.oidoTexto2 img {
+    width: 200px;
+}
+
+.oidoTextoFoto {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.percepcionTexto {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.percepcionTextoFoto img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.ritmoTexto {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.ritmoTextoFoto img {
+    width: 100px;
+}
+
+.instrumentosTexto {
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.instrumentosTextoVideo video  {
+    width: 400px;
+}
+
+
+
+.enlace1 img,
+.enlace3 img, .enlace4 img, .enlace5 img {
+    width: 30px;
+}
+
+.enlace2 img {
+    width: 25px;
+}

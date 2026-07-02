@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu ADN emocional musical</title>
+    <link rel="stylesheet" href="style/juego.css">
+    <link rel="shortcut icon" href="img/iconoPerfil.ico">
+    <meta author="Estrella Maturana Muñoz">
+</head>
+
+<body>
+    <div class="cabecera">
+        <h2>¿QUÉ ACTIVA TU ADN MUSICAL?</h2>
+    </div>
+    <div class="cuerpo">
+        <div class="cuerpoFoto">
+            <img src="img/index.png" title="El gen de la música">
+        </div>
+        <div class="cuerpoTexto">
+            <p>Cada persona percibe la música de manera distinta. Tus respuestas emocionales a estos seis fragmentos
+                musicales pueden reflejar características relacionadas con tu sensibilidad auditiva</p>
+            <p>Algunas de esas características están influidas por la genética, pero la epigenética modula profundamente
+                como tu cerebro responde al sonido. La música activa genes relacionados con emociones, memoria y
+                creatividad.</p>
+            <p>Tú eliges cómo te hace sentir cada clip y después descubrirás qué puede contar tu patrón sonoro sobre tu
+                "ADN Musical".</p>
+            <p>A continuación escucharás 6 clips con ritmos y estructuras muy diferentes entre sí. Elige la opción que
+                mejor describa tu reacción emocional. Este test no mide talento musical, solo explora como tu cerebro
+                responde a distintos patrones sonoros.</p>
+        </div>
+    </div>
+    <div class="enlaces">
+        <div class="enlace1">
+            <img src="img/estrella.png" alt="Imagen no disponible"><a href="index.html" title="Index">Index</a>
+            <p>Explora todos los temas y vuelve fácilmente a cualquier apartado</p>
+        </div>
+
+        <div class="enlace2">
+            <img src="img/iconoGenetica.ico" alt="Imagen no disponible"><a href="genetica.html" title="Genética">Genética</a>
+            <p>Para volver a revisar los fundamentos de la genética y como influyen en nosotros</p>
+        </div>
+
+        <div class="enlace3">
+            <img src="img/iconoMusica.ico" alt="Imagen no disponible"><a href="musica.html" title="Música">¿Nacemos con talento
+                musical?</a>
+            <p>Descubre cómo la genética y la música se entrelazan en el estudio del sonido y la herencia</p>
+        </div>
+
+        <div class="enlace4">
+            <img src="img/iconoEpigenetica.ico" alt="Imagen no disponible"><a href="epigenetica.html" title="Epigenética">Epigenética</a>
+            <p>Para entender cómo el entorno puede modificar la expresión genética</p>
+        </div>
+
+        <div class="enlace5">
+            <img src="img/iconoMelodico.ico" alt="Imagen no disponible"><a href="adnMelodico.html" title="ADN Melódico">El ADN Melódico</a>
+            <p>Para exploprar cómo el ADN puede inspirar y reflejar estructuras musicales</p>
+        </div>
+
+        <div class="enlace6">
+            <img src="img/iconoPerfil.ico" alt="Imagen no disponible"><a href="perfil.html" title="Formulario">Tu perfil
+                musical-genético</a>
+            <p>Descubre cómo tus preferencias musicales podrían relacionarse con rasgos genéticos y patrones
+                de personalidad</p>
+        </div>
+    </div>
+    <form action="" method="GET">
+    <div class="test">
+        <div class="clip1">
+            <fieldset>
+                <legend>Ritmo simple</legend>
+                <audio src="audio/Clip1.mp3" controls></audio><br><br>
+                <label for="emocion1">¿Qué emoción te provoca?</label>
+                <select id="emocion1" name="emocion1" multiple size="1">
+                    <option value="tranquilidad">Tranquilidad</option>
+                    <option value="relajacion">Relajación</option>
+                    <option value="alegria">Alegría</option>
+                    <option value="nostalgia">Nostalgia</option>
+                    <option value="energia">Energía</option>
+                    <option value="estabilidad">Estabilidad</option>
+                    <option value="indiferencia">Indiferencia</option>
+                    <option value="aburrimiento">Aburrimiento</option>
+                    <option value="tension">Tensión</option>
+                    <option value="intesidad">Intensidad</option>
+                    <option value="creatividad">Creatividad</option>
+                    <option value="desconexión">Desconexión</option>
+                    <option value="nervios">Nerviosismo</option>
+                    <option value="curiosidad">Curiosidad</option>
+                    <option value="incomodidad">Incomodidad</option>
+                    <option value="ninguna">Ninguna</option>
+                </select><br><br>
+                <label for="descripcion1">Describe en una frase como te hizo sentir</label>
+                <textarea name="descripcion1" id="descripcion1" cols="52"></textarea><br><br>
+                <label for="donde1">¿Dónde escucharías esta canción?</label>
+                <select id="donde1" name="donde1">
+                    <option value="estudiando">Estudiando</option>
+                    <option value="ejercicio">Haciendo ejercicio</option>
+                    <option value="descanso">Descansando</option>
+                    <option value="fiesta">De fiesta</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="otro1">Si elegiste otro, ¿cuál?</label>
+                <textarea id="otro1" name="otro1"></textarea><br><br>
+            </fieldset>
+        </div>
+        <div class="clip2">
+            <fieldset>
+                <legend>Ritmo rápido y marcado</legend>
+                <audio src="audio/Clip2.mp3" controls></audio><br><br>
+                <label for="emocion2">¿Qué emoción te provoca?</label>
+                <select id="emocion2" name="emocion2" multiple size="1">
+                    <option value="tranquilidad">Tranquilidad</option>
+                    <option value="relajacion">Relajación</option>
+                    <option value="alegria">Alegría</option>
+                    <option value="nostalgia">Nostalgia</option>
+                    <option value="energia">Energía</option>
+                    <option value="estabilidad">Estabilidad</option>
+                    <option value="indiferencia">Indiferencia</option>
+                    <option value="aburrimiento">Aburrimiento</option>
+                    <option value="tension">Tensión</option>
+                    <option value="intesidad">Intensidad</option>
+                    <option value="creatividad">Creatividad</option>
+                    <option value="desconexión">Desconexión</option>
+                    <option value="nervios">Nerviosismo</option>
+                    <option value="curiosidad">Curiosidad</option>
+                    <option value="incomodidad">Incomodidad</option>
+                    <option value="ninguna">Ninguna</option>
+                </select><br><br>
+                <label for="descripcion2">Describe en una grase como te hizo sentir</label>
+                <textarea name="descripcion2" id="descripcion2" cols="52"></textarea><br><br>
+                <label for="donde2">¿Dónde escucharías esta canción?</label>
+                <select id="donde2" name="donde2">
+                    <option value="estudiando">Estudiando</option>
+                    <option value="ejercicio">Haciendo ejercicio</option>
+                    <option value="descanso">Descansando</option>
+                    <option value="fiesta">De fiesta</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="otro2">Si elegiste otro, ¿cuál?</label>
+                <textarea id="otro2" name="otro2"></textarea><br><br>
+            </fieldset>
+        </div>
+        <div class="clip3">
+            <fieldset>
+                <legend>Melodía y ritmo complejos</legend>
+                <audio src="audio/Clip3.mp3" controls></audio><br><br>
+                <label for="emocion3">¿Qué emoción te provoca?</label>
+                <select id="emocion3" name="emocion3" multiple size="1">
+                    <option value="tranquilidad">Tranquilidad</option>
+                    <option value="relajacion">Relajación</option>
+                    <option value="alegria">Alegría</option>
+                    <option value="nostalgia">Nostalgia</option>
+                    <option value="energia">Energía</option>
+                    <option value="estabilidad">Estabilidad</option>
+                    <option value="indiferencia">Indiferencia</option>
+                    <option value="aburrimiento">Aburrimiento</option>
+                    <option value="tension">Tensión</option>
+                    <option value="intesidad">Intensidad</option>
+                    <option value="creatividad">Creatividad</option>
+                    <option value="desconexión">Desconexión</option>
+                    <option value="nervios">Nerviosismo</option>
+                    <option value="curiosidad">Curiosidad</option>
+                    <option value="incomodidad">Incomodidad</option>
+                    <option value="ninguna">Ninguna</option>
+                </select><br><br>
+                <label for="descripcion3">Describe en una grase como te hizo sentir</label>
+                <textarea name="descripcion3" id="descripcion3" cols="52"></textarea><br><br>
+                <label for="donde3">¿Dónde escucharías esta canción?</label>
+                <select id="donde3" name="donde3">
+                    <option value="estudiando">Estudiando</option>
+                    <option value="ejercicio">Haciendo ejercicio</option>
+                    <option value="descanso">Descansando</option>
+                    <option value="fiesta">De fiesta</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="otro3">Si elegiste otro, ¿cuál?</label>
+                <textarea id="otro3" name="otro3"></textarea><br><br>
+            </fieldset>
+        </div>
+        <div class="clip4">
+            <fieldset>
+                <legend>Sonido ambiental sin ritmo</legend>
+                <audio src="audio/Clip4.mp3" controls></audio><br><br>
+                <label for="emocion4">¿Qué emoción te provoca?</label>
+                <select id="emocion4" name="emocion4" multiple size="1">
+                    <option value="tranquilidad">Tranquilidad</option>
+                    <option value="relajacion">Relajación</option>
+                    <option value="alegria">Alegría</option>
+                    <option value="nostalgia">Nostalgia</option>
+                    <option value="energia">Energía</option>
+                    <option value="estabilidad">Estabilidad</option>
+                    <option value="indiferencia">Indiferencia</option>
+                    <option value="aburrimiento">Aburrimiento</option>
+                    <option value="tension">Tensión</option>
+                    <option value="intesidad">Intensidad</option>
+                    <option value="creatividad">Creatividad</option>
+                    <option value="desconexión">Desconexión</option>
+                    <option value="nervios">Nerviosismo</option>
+                    <option value="curiosidad">Curiosidad</option>
+                    <option value="incomodidad">Incomodidad</option>
+                    <option value="ninguna">Ninguna</option>
+                </select><br><br>
+                <label for="descripcion4">Describe en una grase como te hizo sentir</label>
+                <textarea name="descripcion4" id="descripcion4" cols="52"></textarea><br><br>
+                <label for="donde4">¿Dónde escucharías esta canción?</label>
+                <select id="donde4" name="donde4">
+                    <option value="estudiando">Estudiando</option>
+                    <option value="ejercicio">Haciendo ejercicio</option>
+                    <option value="descanso">Descansando</option>
+                    <option value="fiesta">De fiesta</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="otro4">Si elegiste otro, ¿cuál?</label>
+                <textarea id="otro4" name="otro4"></textarea><br><br>
+            </fieldset>
+        </div>
+        <div class="clip5">
+            <fieldset>
+                <legend>Ritmo tenso</legend>
+                <audio src="audio/Clip5.mp3" controls></audio><br><br>
+                <label for="emocion5">¿Qué emoción te provoca?</label>
+                <select id="emocion5" name="emocion5" multiple size="1">
+                    <option value="tranquilidad">Tranquilidad</option>
+                    <option value="relajacion">Relajación</option>
+                    <option value="alegria">Alegría</option>
+                    <option value="nostalgia">Nostalgia</option>
+                    <option value="energia">Energía</option>
+                    <option value="estabilidad">Estabilidad</option>
+                    <option value="indiferencia">Indiferencia</option>
+                    <option value="aburrimiento">Aburrimiento</option>
+                    <option value="tension">Tensión</option>
+                    <option value="intesidad">Intensidad</option>
+                    <option value="creatividad">Creatividad</option>
+                    <option value="desconexión">Desconexión</option>
+                    <option value="nervios">Nerviosismo</option>
+                    <option value="curiosidad">Curiosidad</option>
+                    <option value="incomodidad">Incomodidad</option>
+                    <option value="ninguna">Ninguna</option>
+                </select><br><br>
+                <label for="descripcion5">Describe en una grase como te hizo sentir</label>
+                <textarea name="descripcion5" id="descripcion5" cols="52"></textarea><br><br>
+                <label for="donde5">¿Dónde escucharías esta canción?</label>
+                <select id="donde5" name="donde5">
+                    <option value="estudiando">Estudiando</option>
+                    <option value="ejercicio">Haciendo ejercicio</option>
+                    <option value="descanso">Descansando</option>
+                    <option value="fiesta">De fiesta</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="otro5">Si elegiste otro, ¿cuál?</label>
+                <textarea id="otro5" name="otro5"></textarea><br><br>
+            </fieldset>
+        </div>
+        <div class="clip6">
+            <fieldset>
+                <legend>Pop ligero</legend>
+                <audio src="audio/Clip6.mp3" controls></audio><br><br>
+                <label for="emocion6">¿Qué emoción te provoca?</label>
+                <select id="emocion6" name="emocion6" multiple size="1">
+                    <option value="tranquilidad">Tranquilidad</option>
+                    <option value="relajacion">Relajación</option>
+                    <option value="alegria">Alegría</option>
+                    <option value="nostalgia">Nostalgia</option>
+                    <option value="energia">Energía</option>
+                    <option value="estabilidad">Estabilidad</option>
+                    <option value="indiferencia">Indiferencia</option>
+                    <option value="aburrimiento">Aburrimiento</option>
+                    <option value="tension">Tensión</option>
+                    <option value="intesidad">Intensidad</option>
+                    <option value="creatividad">Creatividad</option>
+                    <option value="desconexión">Desconexión</option>
+                    <option value="nervios">Nerviosismo</option>
+                    <option value="curiosidad">Curiosidad</option>
+                    <option value="incomodidad">Incomodidad</option>
+                    <option value="ninguna">Ninguna</option>
+                </select><br><br>
+                <label for="descripcion6">Describe en una grase como te hizo sentir</label>
+                <textarea name="descripcion6" id="descripcion6" cols="52"></textarea><br><br>
+                <label for="donde6">¿Dónde escucharías esta canción?</label>
+                <select id="donde6" name="donde6">
+                    <option value="estudiando">Estudiando</option>
+                    <option value="ejercicio">Haciendo ejercicio</option>
+                    <option value="descanso">Descansando</option>
+                    <option value="fiesta">De fiesta</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <label for="otro6">Si elegiste otro, ¿cuál?</label>
+                <textarea id="otro6" name="otro6"></textarea><br><br>
+            </fieldset>
+        </div>
+    </div>
+    <div class="cuestionarioFinal">
+        <fieldset>
+            <legend>Cuestionario Final</legend>
+            <label for="genetica">¿Crees que tus emociones al escuchar música podrían estar influidas por tu genética o tus experiencias de vida?</label>
+            <input type="radio" id="genetica" name="emocionesInfluidas" value="Genetica">
+            <label for="genetica">Genética</label>
+            <input type="radio" id="ambiente" name="emocionesInfluidas" value="Ambiente">
+            <label for="ambiente">Ambiente</label>
+            <input type="radio" id="ambas" name="emocionesInfluidas" value="Ambas">
+            <label for="ambas">Ambas</label>
+            <br><br>
+            <label for="tipoMusica">¿Qué tipo de música escuchas cuando quieres mejorar tu ánimo?</label>
+            <textarea name="tipoMusica" id="tipoMusica" cols="90" rows="3"></textarea>
+        </fieldset>
+    </div>
+    <div class="botones">
+        <button type="submit">Enviar datos</button>
+        <button type="reset">Borrar datos</button>
+    </div>
+    </form>
+    <div class="footer">
+        <div class="resultado">
+            <div class="resultadoTitulo">
+                <h2>¿Quieres saber tus resultados?</h2>
+            </div>
+            <div class="resultadoTexto">
+                <p>Si quieres saber tus respuestas estaré encantada de contestarte.
+                    Puedes escribirme a mi correo y te responderé lo antes posible.</p>
+                <a href="mailto:estrellamaturana@gmail.com?subject=Resultado%20test%20musical">Mandar correo</a>
+            </div>
+        </div>
+        <div class="index">
+            <h2>¿Quieres volver a la página principal?</h2>
+                <a href="index.html#index" title="Index">Index</a>
+        </div>
+    </div>
+</body>
+
+</html>
